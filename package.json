@@ -1,0 +1,19 @@
+{
+  "name": "tic-tac-toe",
+  "version": "0.1.0",
+  "description": "Showing off some mad frontend skills",
+  "author": "Amnon Sadeh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/targumon/Tic-Tac-Toe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/targumon/Tic-Tac-Toe/issues"
+  },
+  "homepage": "https://github.com/targumon/Tic-Tac-Toe#readme",
+  "main": "index.html",
+  "scripts": {
+    "build": "webpack"
+  }
+}
