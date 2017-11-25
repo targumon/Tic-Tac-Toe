@@ -15,11 +15,14 @@
   "main": "index.html",
   "scripts": {
     "build": "webpack",
-    "watch": "webpack --watch -d --progress --colors --display-reasons"
+    "watch": "webpack --watch -d --progress --colors --display-reasons",
+    "test": "standard --fix"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-preset-react": "^6.24.1",
+    "standard": "^10.0.3",
     "webpack": "^3.8.1"
   },
   "dependencies": {

@@ -1,0 +1,29 @@
+/* Switch to SCSS! */
+
+body {
+    font-family: fantasy, sans-serif;
+}
+
+.grid {
+    width: fit-content;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+.row:not(:last-child) {
+    border-bottom: 1px solid grey;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    line-height: 100px; /* all these '100px' need to be parameterized */
+    font-size: 100px;
+    text-align: center;
+}
+.cell:not(:last-child) {
+    border-right: 1px solid grey; /* should be a SCSS var as well... */
+}
