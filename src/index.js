@@ -30,8 +30,8 @@ class App extends React.Component {
   render () {
     const {board, winner} = this.state
     let result = ''
-    if (winner > -1) result = 'Player ' + (winner + 1) + ' won! 🎉' // TODO: use %s + i18n...
     if (logic.isImpasse(board)) result = 'Draw 😕'
+    if (winner > -1) result = 'Player ' + (winner + 1) + ' won! 🎉' // TODO: use %s + i18n...
     // TODO: announce-result should be a component
     return (
       <div className='game'>

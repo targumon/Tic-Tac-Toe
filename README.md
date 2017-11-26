@@ -24,3 +24,4 @@
 #### Dev Tasks
 * ✔ <del>Test logic</del>
 * Code coverage
+* minify/uglify
