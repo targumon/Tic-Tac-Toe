@@ -32,6 +32,26 @@ export function getNextState (prev, i, j, occupant) {
   }
 }
 
-export function getBoardWinner (board) {
+export function getWinnerCode (board) {
+  let winPaths = []
+  board.forEach((row, i) => {
+    winPaths.push(board[i]) // actual rows
+  })
+  let transpose = board[0].map((col, i) => board.map(row => row[i])) // columns
+  transpose.forEach((row, i) => {
+    winPaths.push(transpose[i])
+  })
+  winPaths.push(board[0].map((col, i) => board[i][i])) // fore diagonal
+  winPaths.push(board[0].map((col, i) => board[i][board.length - i - 1])) // back diagonal
 
+  return winPaths.reduce((prev, curr) => { // note the bitwise operations!
+    return prev | curr.reduce((cell1, cell2) => { // winning a board means winning ANY of its row
+      return cell1 & cell2 // winning a row means marking ALL its cells
+    })
+  }, EMPTY)
+}
+
+export function isImpasse (board) { // TODO: test
+  let flatten = [].concat(...board)
+  return !flatten.includes(EMPTY)
 }

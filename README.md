@@ -3,7 +3,7 @@
 ## Roadmap
 
 #### Functionality
-* Core Game Logic
+* ✔ <del>Core Game Logic</del>
 * Scorecard Keeping
 * Personalize (e.g. edit player names) 
 * Potential places to explore in the future:
@@ -17,6 +17,10 @@
         * [Ultimate TTT](https://mathwithbaddrawings.com/ultimate-tic-tac-toe-original-post/)
 
 #### UI/UX
-* Basic L&F
+* ✔ <del>Basic L&F</del>
 * Cross browser
 * Touch support
+
+#### Dev Tasks
+* ✔ <del>Test logic</del>
+* Code coverage
