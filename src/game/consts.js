@@ -1,0 +1,9 @@
+export const BOARD_SIZE = 3
+export const EMPTY = 0b0 // 0
+const PLAYER1 = 0b1 // 1
+const PLAYER2 = 0b10 // 2
+// const PLAYER3 = 0b100 // 4
+// const PLAYER4 = 0b1000 // 8
+// const PLAYER5 = 0b10000 // 16
+export const PLAYER_CODES = [PLAYER1, PLAYER2]
+export const NUM_OF_PLAYERS = 2

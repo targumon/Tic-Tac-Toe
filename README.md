@@ -18,4 +18,5 @@
 
 #### UI/UX
 * Basic L&F
+* Cross browser
 * Touch support

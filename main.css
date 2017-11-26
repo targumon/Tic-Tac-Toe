@@ -17,6 +17,7 @@ body {
 .row:not(:last-child) {
     border-bottom: 1px solid grey;
 }
+
 .cell {
     width: 100px;
     height: 100px;
@@ -26,4 +27,7 @@ body {
 }
 .cell:not(:last-child) {
     border-right: 1px solid grey; /* should be a SCSS var as well... */
+}
+.cell.taken {
+    cursor: not-allowed;
 }
