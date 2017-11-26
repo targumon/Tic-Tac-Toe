@@ -1,5 +1,7 @@
 # Tic-Tac-Toe
 
+Don't be a dull boy, Jack. [Play now!](https://targumon.github.io/Tic-Tac-Toe/)
+
 ## Roadmap
 
 #### Functionality
@@ -25,3 +27,4 @@
 * ✔ <del>Test logic</del>
 * Code coverage
 * minify/uglify
+* favicon
